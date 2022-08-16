@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css copy/bootstrap.css">
+    <title>Document</title>
+    <style>
+        #btn{
+            display:none;
+        
+        }
+        input:not(:placeholder-shown)+button{
+display:block;
+        }
+        .container{
+            position:relative;
+            width:50vw;
+            height:50vh;
+            border:2px solid black;
+           justify-content: center;
+            margin:auto;
+           align-items: center; 
+           background:url(./css/fierce-fantasy-black-winged-dragon-260nw-1585412341.webp);
+background-repeat: no-repeat;
+background-size: cover;
+        }
+        .container:before{
+            content:"Hello Welcome";
+            
+            width:100vw;
+            height:100vh;
+            position:absolute;
+            line-height:80px;
+            
+            color:red;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin:auto;
+opacity:0;
+transition:opacity .2s ease;
+
+
+        } 
+        .container:hover::before{
+            opacity:5;
+            transition:opacity .2s ease;
+        }
+   .main-btn{
+    color:rgb(12, 1, 1);
+    border-radius:20px;;
+    width:10em;
+    height:10em;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(to right,red 50%,transparent 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: all 0.5s ease-out;
+
+   }
+   .main-btn:hover{
+    color:white;
+    background-position: left bottom;
+    /* font: size 100px; */
+   }
+    </style>
+</head>
+<body id="body">
+    <input type="text" placeholder="Write Here">
+    <button id="btn" type="button">Search</button>
+<div class="container">ddhghdsdjsdhjshjfd</div>
+<br>
+<button class="main-btn  ">Hire Me</button>
+<script>
+   
+
+</script>
+</body>
+</html>

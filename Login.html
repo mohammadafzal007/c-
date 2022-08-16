@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ec5ac47920.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <div class="container">
+<div class="form-box">
+    <div class="btn-box">
+        <div id="btn"></div>
+        <button class="toggle-btn" onclick='login()'>Login</button>
+        <button class="toggle-btn" onclick='register()'>Register</button>
+    </div>
+    <div class="social-btn">
+<img src="fb.webp">
+<img src="insta.jfif">
+<img src="gogle.jfif">
+    </div>
+    <form id='login' class="input-group">
+        <input type="text"class="input-field"placeholder="User Id"required>
+        <input type="text"class="input-field"placeholder="Enter Password"required>
+        <input type="checkbox"class="check-box"><span>Remember Password</span>
+        <button type="submit"class="submit-btn">Log in</button>
+        </form>
+    <form id='register' class="input-group">
+        <input type="text"class="input-field"placeholder="User Id"required>
+        <input type="email"class="input-field"placeholder='Email Id' required>
+        <input type="text"class="input-field"placeholder="Enter Password"required>
+        <input type="checkbox"class="check-box"><span>I agree to terms and conditions</span>
+        <button type="submit"class="submit-btn"><Register</button>
+        </form>
+</div>
+    </div>
+    <script>
+        let x=document.getElementById('login');
+        let y=document.getElementById('register');
+        let z=document.getElementById('btn');
+
+        function login(){
+    z.style.left='50px';
+    y.style.left='-450px';
+}      
+
+function register(){
+    x.style.left='-350px';
+    y.style.left='70px';
+    z.style.left='110px';
+}
+function login(){
+    x.style.left='70px';
+    y.style.left='450px';
+    z.style.left='0px';
+}
+
+        
+    </script>
+</body>
+</html>
